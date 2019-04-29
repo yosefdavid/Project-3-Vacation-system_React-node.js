@@ -1,0 +1,9 @@
+
+// rest-full API
+
+http://localhost:3000/vacations
+
+http://localhost:3000/vacations/id
+
+----------------
+

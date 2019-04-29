@@ -1,0 +1,373 @@
+body {
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 11px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(177, 165, 165); 
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #867979; 
+    }
+ 
+    .container {
+        margin-top: 30px;
+        text-align: center;
+      
+        .row {
+            margin-top: 5px;
+        }
+
+        .LoginEndSingup-bg {
+            background-image: url("https://graphic.com.vn//uploads/product/photos/P4YRBC5/cover/w1200.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 800px;
+
+            .login-signup-comps {
+                display: inline-block;
+                margin-top: 150px;
+                font-weight: bold;
+
+                input {
+                    opacity: 0.6;
+                }
+
+                .msg {
+                    color: rgb(170, 5, 5);
+                }
+
+                .btn-links {
+                border: none;
+                background: none;
+                }
+
+                h1 {
+                    box-shadow: 0px 0px 20px;
+                    text-shadow: 1px 2px 5px;
+                    border-radius: 20px;
+                }
+                
+                .signup-comp {
+                    margin-top: 15px;
+        
+                    .row-signup {
+                        margin-top: 15px;
+                    }
+        
+                }
+        
+                .login-comp {
+                    margin-top: 15px;
+                    padding: 8px;
+
+                    .row-login {
+                        margin-top: 15px;
+                    }
+                    
+                }
+    
+            }
+
+        }
+
+        .user-bg {
+            background: url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?cs=srgb&dl=backgrounds-blank-blue-953214.jpg&fm=jpg") fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 650px;
+
+            .user-comp {
+            
+                /* Chrome, Safari, Opera */
+                @-webkit-keyframes follow-animation {
+                    from {background: white; color: #3399FF; width: 85px; left: 50px;}
+                    to {background: #2EB82E; border-color: #2EB82E; color: #ffffff; width: 120px; left: 35px;}
+                }
+                @-webkit-keyframes unfollow-animation {
+                    from {background: #2EB82E; color: #ffffff; width: 120px; left: 35px;}
+                    to {background: white; border-color: #3399FF; color: #3399FF; width: 85px; left: 50px;}
+                }
+                
+                /* Standard syntax */
+                @keyframes follow-animation {
+                    from {background: white; color: #3399FF; width: 85px; left: 50px;}
+                    to {background: #2EB82E; border-color: #2EB82E; color: #ffffff; width: 120px; left: 35px;}
+                }
+                @keyframes unfollow-animation {
+                    from {background: #2EB82E; color: #ffffff; width: 120px; left: 35px;}
+                    to {background: white; border-color: #3399FF; color: #3399FF; width: 85px; left: 50px;}
+                }
+                
+                input {
+                    -webkit-appearance: none;
+                }
+                
+                input:after {
+                    color: #3399FF;
+                    font-family: "Helvetica";
+                    font-size: 10pt;
+                    background-color: #ffffff;
+                    border: 1px solid;
+                    border-color: #3399FF;
+                    border-radius: 3px;
+                    cursor: hand;
+                    display: inline-block;
+                    text-align: center;
+                    padding: 5px 15px;
+                
+                
+                    content: '+ Follow';
+                    -webkit-animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    -webkit-animation-fill-mode:forwards;
+                    animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    animation-fill-mode:forwards;
+                }
+                
+                input:checked:after {
+                    content: 'Following';
+                    -webkit-animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    -webkit-animation-fill-mode:forwards;
+                    animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    animation-fill-mode:forwards;
+                }
+
+                .col-header {
+                    margin-top: 25px;
+
+                    h3 {
+                        color: lightskyblue;
+                        font-family: initial;
+                        box-shadow: 0px 0px 19px;
+                    }
+
+                    button {
+                       float: right;
+                    }
+
+                }
+
+                
+                .row-main {
+                    margin-top: 40px;
+
+                    .card {
+                        display: inline-block;
+                        opacity: 0.85;
+                        margin: 15px;
+                        height: 590px;
+                        box-shadow: 0px 0px 10px 10px;
+    
+                        img {
+                            height: 191px;
+                        }
+    
+                        .card-text {
+                            height: 100px;
+                            overflow-y: auto;
+                            text-align: left;
+                        }
+    
+                        .plane-icon {
+                            
+                            margin-right: 10px;
+                        }
+    
+                        .dollar-icon {
+                            margin-left: 5px;
+                        }
+    
+                        .eye-icon {
+                            margin-left: 20px;
+                        }
+    
+                    }
+
+                }
+
+             }
+
+        }
+
+        .admin-bg {
+            background: url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?cs=srgb&dl=backgrounds-blank-blue-953214.jpg&fm=jpg") fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 650px;
+
+            .admin-comp {
+
+                .col-header {
+                    margin-top: 25px;
+                    
+                    label {
+                        background: azure;
+                        border-radius: 10px;
+                        padding: 3px;
+                        font-family: serif;
+                    }
+
+                    .btn-links {
+                        border: none;
+                        background: none;
+                    }
+
+                }
+
+                h3 {
+                    color: lightskyblue;
+                    font-family: initial;
+                    box-shadow: 0px 0px 19px;
+                }
+
+                .col-access{
+                    float: left;
+                }
+    
+                #add-vacation-modal {
+    
+                    .modal-header {
+    
+                        display: block;
+    
+                        img {
+                            width: 100px; 
+                            height: 70px;
+                            border-radius: 5px;
+                        }
+    
+                    }
+    
+                     .modal-body {
+    
+                        textarea {
+                            width: 182px;
+                        }
+    
+                        .img-upp {
+                            width: 180px;
+                        }
+    
+                    }
+    
+                }
+    
+                .card {
+                    display: inline-block;
+                    margin: 15px;
+                    height: 616px;
+                    opacity: 0.85;
+                    box-shadow: 0px 0px 10px 10px;
+    
+                    img {
+                        height: 191px;
+                    }
+    
+                    .card-text {
+                        height: 100px;
+                        overflow-y: auto;
+                        text-align: left;
+                    }
+    
+                    .plane-icon {
+                        margin-right: 10px;
+                    }
+    
+                    .dollar-icon {
+                        margin-left: 5px;
+                    }
+    
+                   .edit-icon {
+                       margin-right: 25px;
+                   }
+    
+                }
+    
+                .btn-nav {
+                    margin: 10px;
+                }
+    
+
+                .canvas {
+                    background: lightyellow;
+                }
+
+                .admin-home-comp {
+                    margin-top: 40px;
+    
+                    #delete-modal {
+    
+                        .modal-header {
+    
+                            display: block;
+        
+                            img {
+                                width: 100px; 
+                                height: 70px;
+                                border-radius: 5px;
+                            }
+        
+                        }
+    
+                        .modal-body {
+    
+                            .row-warrnig {
+                                margin-top: 10px;
+                            }
+    
+                        }
+    
+                    }
+    
+                    #edit-modal {
+    
+                        .modal-header {
+    
+                            display: block;
+        
+                            img {
+                                width: 100px; 
+                                height: 70px;
+                                border-radius: 5px;
+                            }
+        
+                        }
+    
+                         .modal-body {
+    
+                            textarea {
+                                width: 182px;
+                            }
+    
+                            .img-upp {
+                                width: 180px;
+                            }
+    
+                        }
+    
+                    }
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+}
+
+
+
